@@ -1,3 +1,8 @@
-from django.db import models
+from django.db import *
 
-# Create your models here.
+class IntFields(Model):
+
+    num_2 = BigAutoField(default=1)
+    num_3 = BigIntegerField(default=-1)
+    num_4 = BinaryField()
+    boolean = BooleanField(null=True)
